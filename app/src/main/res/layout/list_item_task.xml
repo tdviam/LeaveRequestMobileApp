@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/instanceIdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:width="100dp"
+        android:text="Subject:" />
+    <TextView
+        android:id="@+id/instanceId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_toRightOf="@+id/instanceIdLabel"
+        />
+
+    <TextView
+        android:id="@+id/ownerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:width="100dp"
+        android:text="Owner:"
+        android:layout_below="@+id/instanceIdLabel"/>
+    <TextView
+        android:id="@+id/owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_toRightOf="@+id/ownerLabel"
+        android:layout_below="@+id/instanceId" />
+
+    <TextView
+        android:id="@+id/requesterLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:width="100dp"
+        android:text="Requester:"
+        android:layout_below="@+id/ownerLabel"/>
+    <TextView
+        android:id="@+id/requester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_below="@+id/owner"
+        android:layout_toRightOf="@+id/requesterLabel"/>
+
+    <TextView
+        android:id="@+id/startDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:width="100dp"
+        android:text="Start Date:"
+        android:layout_below="@+id/requesterLabel"/>
+    <TextView
+        android:id="@+id/startDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_below="@+id/requester"
+        android:layout_toRightOf="@+id/startDateLabel"/>
+
+    <TextView
+        android:id="@+id/endDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:width="100dp"
+        android:text="End Date:"
+        android:layout_below="@+id/startDateLabel"/>
+    <TextView
+        android:id="@+id/endDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_below="@+id/startDate"
+        android:layout_toRightOf="@+id/endDateLabel"/>
+
+    <TextView
+        android:id="@+id/leaveTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:width="100dp"
+        android:text="Leave Type:"
+        android:layout_below="@+id/endDateLabel"/>
+    <TextView
+        android:id="@+id/leaveType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_below="@+id/endDate"
+        android:layout_toRightOf="@+id/leaveTypeLabel"/>
+
+    <TextView
+        android:id="@+id/descriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:width="100dp"
+        android:text="Description:"
+        android:layout_below="@+id/leaveTypeLabel"/>
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_below="@+id/leaveType"
+        android:layout_toRightOf="@+id/descriptionLabel"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/leaveType"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Approve"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btnSubmit"
+            android:text="Reject"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
