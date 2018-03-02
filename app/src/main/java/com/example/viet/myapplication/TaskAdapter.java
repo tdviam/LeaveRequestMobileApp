@@ -175,8 +175,7 @@ public class TaskAdapter extends BaseAdapter {
                                 }
                             }
                     );
-
-                    //
+                    
                     AlertDialog alertDialog = alertDialogBuilder.create();
                     alertDialog.show();
 

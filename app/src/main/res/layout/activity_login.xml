@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="Leave Request Approver"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="30dp"
         android:gravity="center"
         android:layout_marginTop="10dp"
         />
@@ -46,7 +46,8 @@
             android:layout_height="wrap_content"
             android:text="Login"
             android:layout_below="@+id/lblUsername"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
             />
 
     </RelativeLayout>
